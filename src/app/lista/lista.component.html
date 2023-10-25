@@ -1,0 +1,13 @@
+
+<div>
+    <input [(ngModel)]="ciudad" placeholder="Ciudad">
+    <button (click)="cargarRestaurante()">Buscar</button>
+</div>
+
+<div>
+    <h1>Restaurantes en {{ ciudad }}</h1>
+
+    <ul>
+        <li *ngFor="let restaurante of restaurantes">{{ restaurante.name }}</li>
+    </ul>
+</div>
